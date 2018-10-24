@@ -7,7 +7,7 @@
 
 <body>
     	<?php 
-			  	header('Location: Projet_CHERUBIM.php');
+			  	header('Location: accueil/Projet_CHERUBIM.php');
   				exit();
 ?>
 </body>
