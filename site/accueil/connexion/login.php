@@ -1,8 +1,9 @@
 <!--Formulaire pour la connexion-->
-<form action="" method="post">
+<?php session_start(); ?>
+<form action="connect.php" method="post">
 
 	<p>Nom d'utilisateur : </p>
- 	<input type="text" name="user" autocomplete="username" value ="Username"/> <br /> <br /> 
+ 	<input type="text" name="username" autocomplete="username"/> <br /> <br /> 
 	
 	<p>Mot de passe : </p>
  	<input type="password" autocomplete="on" name="password" /> <br /> <br /> 
