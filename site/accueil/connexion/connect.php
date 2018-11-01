@@ -1,8 +1,9 @@
 <!--Verifie si les parametres entres dans le formulaire login correspondent a un utilisateur et cree une session associee-->
 
 <?php 
-//on essaye de recuperer les parametres pour acceder a la base de donnee 
 session_start();
+//on essaye de recuperer les parametres pour acceder a la base de donnee 
+
 try{
 	$setting = fopen('../../setting', 'r'); //on ouvre setting en lecture seule
 
@@ -68,9 +69,6 @@ try{
 	else{
 		echo "error";
 	}
-
-
-	
 
 }
 catch(Exception $e)
