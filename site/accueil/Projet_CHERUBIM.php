@@ -46,7 +46,7 @@
 	    	<ul>
      			<li><a href="#">Accueil</a></li>
         		<li><a href="#">Histoire</a></li>
-        		<li><a href="#">Personnage</a></li>
+        		<li><a href="characters/characters_list.php">Personnage</a></li>
         		<li><a href="#">Contact</a></li>
         	</ul>
         	<form>

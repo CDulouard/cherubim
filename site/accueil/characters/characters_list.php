@@ -1,9 +1,20 @@
-<!--Verifie si les parametres entres dans le formulaire login correspondent a un utilisateur et cree une session associee-->
+<!--Liste tout les personnage disponible dans la base de donnee-->
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Personnages</title>
+    </head>
 
-<?php 
-session_start();
+    <body>
+    	<h1>Personnages :</h1>
+
+    	<section id = 'list_chars'>
+    		<ul id = 'list_chars'>
+<?php
 //on essaye de recuperer les parametres pour acceder a la base de donnee 
-
 try{
 	$setting = fopen('../../setting', 'r'); //on ouvre setting en lecture seule
 
@@ -34,7 +45,6 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-
 //on essaye de se connecter a la bdd en utilisant les parametres recuperes
 try 
 {
@@ -46,25 +56,17 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-//on essaye de creer l utilisateur admin
-
+//on recupere tout les personnages dans la table charactere
 try{
 	
-	$req = $bdd->prepare('SELECT * FROM users WHERE username = ?'); //on prepare la requete pour le serveur
+	$req = $bdd->prepare('SELECT id, first_name, last_name FROM characters'); //on prepare la requete pour le serveur
 	
-	if($req->execute(array($_POST['username']) ) ){
-		$data = $req->fetch();
-		if($data && password_verify($_POST['password'], $data['password'])){
-			$_SESSION['username'] = $data['username'];
-			$_SESSION['type'] = $data['type'];
-			$_SESSION['mail'] = $data['mail'];
-			
-			echo "connexion réussie! ";
+	if($req->execute(array() ) ){
+		
+		while($data = $req->fetch()){ //on affiche la liste des personnages ici
+			echo "<li><a href = 'character.php?id=".$data['id']."'>".$data['first_name']." ".$data['last_name']."</a>";//-----rajouter le liens vers la page perso ici!
 		}
-		else{
-			echo "Nom d'utilisateur ou mot de passe incorrect.";
-		}
-
+		
 	}
 	else{
 		echo "error";
@@ -75,9 +77,10 @@ catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
 }
-?>
 
-
-
-</br>
-<a href="../../">accueil</a>
+?>		
+			</ul>
+		</section>
+		<a href="../../">accueil</a>
+	</body>
+</html>
