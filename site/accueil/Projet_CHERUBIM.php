@@ -15,6 +15,7 @@
      			<li><a href="#">Accueil</a></li>
         		<li><a href="#">Histoire</a></li>
         		<li><a href="#">Personnage</a></li>
+                <li><a href="connexion/login.php">Connexion</a></li>
         		<li><a href="#">Contact</a></li>
         	</ul>
         	<form>
