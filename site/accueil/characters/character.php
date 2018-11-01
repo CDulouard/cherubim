@@ -50,6 +50,7 @@
 
     $req = $bdd->prepare('SELECT * FROM characters WHERE id = ?'); //on prepare la requete pour le serveur
     
+    
     if($req->execute(array($_GET['id']) ) ){
         $data = $req->fetch();
 

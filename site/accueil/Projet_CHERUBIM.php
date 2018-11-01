@@ -22,7 +22,7 @@
                     </h1>
                     
                     <ul id = 'options user'>
-                        <li><a href = 'connexion/disconnect.php'>Se deconnecter</a>
+                        <li><a href = 'login/disconnect.php'>Se deconnecter</a>
                         <li><a href = ''>Interface utilisateur</a>
                     </ul>
 
@@ -32,8 +32,8 @@
             echo "
                 <section id = 'info_user'>
                     <ul id = 'options user'>
-                        <li><a href='connexion/login.php'>Se connecter</a>
-                        <li><a href=''>Creer un compte</a>
+                        <li><a href='login/login.php'>Se connecter</a>
+                        <li><a href='register/register.php'>Creer un compte</a>
                     <ul>
 
                 </section>";
