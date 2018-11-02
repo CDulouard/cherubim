@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" />
 <?php   
 
-    include('../../ConnectToDB.php');
+    include('\wamp64\www\cherubim\site\ConnectToDB.php');
 
     $req = $bdd->prepare('SELECT * FROM characters WHERE id = ?'); //on prepare la requete pour le serveur
     
@@ -43,7 +43,7 @@
         </header>
         <nav>
 	    	<ul>
-     			<li><a href='../../'>Accueil</a></li>
+     			<li><a href='../accueil/Projet_CHERUBIM.php'>Accueil</a></li>
         		<li><a href='#'>Histoire</a></li>
         		<li><a href='characters_list.php'>Personnages</a></li>
         		<li><a href='#'>Contact</a></li>

@@ -1,9 +1,9 @@
 <!--interface utilisateur-->
 <?php session_start();
 	if(!isset($_SESSION['username'])){
-		header('Location: ../login/login.php');
+		header('Location: /cherubim/site/accueil/login/login.php');
   		exit();
-
+//http://localhost/cherubim/site/accueil/user/interface.php
   		}
  ?>
 <!DOCTYPE html>
@@ -39,6 +39,6 @@
     			<li><a href="user_option/delete_user/delete_user.php">Supprimer le compte</a></li>
     		</ul>
     	</section>
-    	<a href="../../">accueil</a>
+    	<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
 	</body>
 </html>

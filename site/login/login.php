@@ -12,7 +12,7 @@
 
 	<br /><a href="#">mot de passe oublie</a>
 	<br /><a href="../register/register.php">Creer un compte</a>
-	<br /><a href="../../">accueil</a>
+	<br /><a href="../accueil/Projet_CHERUBIM.php">accueil</a>
 
 </form>
 

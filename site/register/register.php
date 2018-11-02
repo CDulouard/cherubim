@@ -20,6 +20,6 @@
 	<input type="submit" value="Creer" />
 
 	<br /><a href="../login/login.php">Se connecter</a>
-	<br /><a href="../../">Accueil</a>
+	<br /><a href="../accueil/Projet_CHERUBIM.php">Accueil</a>
 
 </form>

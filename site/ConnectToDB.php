@@ -1,5 +1,6 @@
 <?php
 try{
+	echo realpath('./ConnectToDB.php');
 	$setting = fopen('/wamp64/www/cherubim/site/setting', 'r'); //on ouvre setting en lecture seule
 
 	$host = fgets($setting); //on recupere la ligne de host et on enleve les caracteres indesirables

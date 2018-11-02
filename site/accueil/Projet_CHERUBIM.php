@@ -22,8 +22,8 @@
                     </h1>
                     
                     <ul id = 'options user'>
-                        <li><a href = 'login/disconnect.php'>Se deconnecter</a>
-                        <li><a href = 'user/interface.php'>Interface utilisateur</a>
+                        <li><a href = '../login/disconnect.php'>Se deconnecter</a>
+                        <li><a href = '../user/interface.php'>Interface utilisateur</a>
                     </ul>
 
                 </section>";
@@ -32,8 +32,8 @@
             echo "
                 <section id = 'info_user'>
                     <ul id = 'options user'>
-                        <li><a href='login/login.php'>Se connecter</a>
-                        <li><a href='register/register.php'>Creer un compte</a>
+                        <li><a href='../login/login.php'>Se connecter</a>
+                        <li><a href='../register/register.php'>Creer un compte</a>
                     <ul>
 
                 </section>";
@@ -46,7 +46,7 @@
 	    	<ul>
      			<li><a href="#">Accueil</a></li>
         		<li><a href="#">Histoire</a></li>
-        		<li><a href="characters/characters_list.php">Personnage</a></li>
+        		<li><a href="/cherubim/site/characters/characters_list.php">Personnage</a></li>
         		<li><a href="#">Contact</a></li>
         	</ul>
         	<form>

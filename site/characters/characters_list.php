@@ -15,7 +15,7 @@
     		<ul id = 'list_chars'>
 <?php
 
-include('../../ConnectToDB.php');
+include('\wamp64\www\cherubim\site\ConnectToDB.php');
 
 //on recupere tout les personnages dans la table charactere
 try{
@@ -42,6 +42,6 @@ catch(Exception $e)
 ?>		
 			</ul>
 		</section>
-		<a href="../../">accueil</a>
+		<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
 	</body>
 </html>

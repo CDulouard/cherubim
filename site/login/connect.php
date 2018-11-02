@@ -4,7 +4,7 @@
 session_start();
 //on essaye de recuperer les parametres pour acceder a la base de donnee 
 
-include('../../ConnectToDB.php');
+include('\wamp64\www\cherubim\site\ConnectToDB.php');
 
 //on essaye de creer l utilisateur admin
 
@@ -40,4 +40,4 @@ catch(Exception $e)
 
 
 </br>
-<a href="../../">accueil</a>
+<a href="../accueil/Projet_CHERUBIM.php">accueil</a>

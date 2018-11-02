@@ -66,4 +66,4 @@ catch(Exception $e)
 ?>
 
 </br>
-<a href="../../">accueil</a>
+<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
