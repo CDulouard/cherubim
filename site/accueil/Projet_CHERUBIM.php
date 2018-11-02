@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../CSS/style.css" />
         <title>Projet CHERUBIM</title>
     </head>
 
