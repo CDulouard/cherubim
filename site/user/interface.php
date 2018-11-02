@@ -34,9 +34,9 @@
     	<section id = 'gestion'>
     		<h2>Options :</h2>
     		<ul>
-    			<li><a href="user_option/change_password/change_password.php">Changer mot de passe</a></li>
-    			<li><a href="user_option/change_mail/change_mail.php">Changer adresse mail</a></li>
-    			<li><a href="user_option/delete_user/delete_user.php">Supprimer le compte</a></li>
+    			<li><a href="../user_option/change_password/change_password.php">Changer mot de passe</a></li>
+    			<li><a href="../user_option/change_mail/change_mail.php">Changer adresse mail</a></li>
+    			<li><a href="../user_option/delete_user/delete_user.php">Supprimer le compte</a></li>
     		</ul>
     	</section>
     	<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
