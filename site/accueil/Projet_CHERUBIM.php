@@ -23,7 +23,7 @@
                     
                     <ul id = 'options user'>
                         <li><a href = 'login/disconnect.php'>Se deconnecter</a>
-                        <li><a href = ''>Interface utilisateur</a>
+                        <li><a href = 'user/interface.php'>Interface utilisateur</a>
                     </ul>
 
                 </section>";
