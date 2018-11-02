@@ -9,7 +9,7 @@
  	<input type="text" name="mail" placeholder="mail" autocomplete="mail"/> <br /> <br /> 
 
  	<p>Confirmez mail : </p>
- 	<input type="text" name="mail_confirm" placeholder="mail confirm" /> <br /> <br /> 
+ 	<input type="text" name="mail_confirm" placeholder="mail confirm" autocomplete="mail"/> <br /> <br /> 
 	
 	<p>Mot de passe : </p>
  	<input type="password" autocomplete="on" placeholder="password" name="password" /> <br /> <br /> 

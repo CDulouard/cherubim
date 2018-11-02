@@ -54,7 +54,7 @@ try{
 	
 	if($req->execute(array($_POST['username']) ) ){
 		$data = $req->fetch();
-		if($data && password_verify($_POST['password'], $data['password'])){
+		if(password_verify($_POST['password'], $data['password'])){
 			$_SESSION['username'] = $data['username'];
 			$_SESSION['type'] = $data['type'];
 			$_SESSION['mail'] = $data['mail'];
