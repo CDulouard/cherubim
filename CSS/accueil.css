@@ -1,36 +1,36 @@
 @font-face 
 {
 	font-family: 'Furore';
-    src: url('police/Furore.otf');
+    src: url('../font/Furore.otf');
 }
 
 @font-face 
 {
     font-family: 'orbitron-black';
-    src: url('police/orbitron-black.otf');
+    src: url('../font/orbitron-black.otf');
 }
 
 @font-face 
 {
     font-family: 'orbitron-bold';
-    src: url('police/orbitron-bold.otf');
+    src: url('../font/orbitron-bold.otf');
 }
 
 @font-face 
 {
     font-family: 'orbitron-light';
-    src: url('police/orbitron-light.otf');
+    src: url('../font/orbitron-light.otf');
 }
 
 @font-face 
 {
     font-family: 'orbitron-medium';
-    src: url('police/orbitron-medium.otf');
+    src: url('../font/orbitron-medium.otf');
 }
 
 body
 {
-	background: url("image/background.jpg") center top no-repeat;
+	background: url("../img/background.jpg") center top no-repeat;
 	color: rgba(0,0,0, 0.8);
 }
 
