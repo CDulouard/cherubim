@@ -20,7 +20,7 @@
         <main>
             <article>
                 <h2>Synospis</h2>
-                <p><img src="../../img/AON.png" class="imageflottante" alt="Image flottante" /> AON 2077. La grande guerre est finit depuis 20 ans. Les grandes puissances se sont effondr
+                <p><img src="../../img/AON.png" class="imageflottante" alt="Image flottante" /> AON 2077. La grande guerre est finit depuis 20 ans. Les grandes puissances se sont effondrées et de nouvelles ont pris leur place.
                 <br />C'est dans la fondation de cette nation que se cache certains secrets sombres d'avant guerre. Bâtie avec les anciennes nations Océaniennes suite à l'effondrement du Commonwealth et sur la volonté d'unification des cultures, cette organisation est devenu l'une des puissances les plus respectées depuis la fin de la guerre.
                 <br />
                 <br />Toutefois, la militarisation extrême des autres puissances força l'Alliance of Oceanian Nation à développer des technologies de combats défensives et de riposte.
