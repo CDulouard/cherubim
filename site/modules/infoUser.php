@@ -1,6 +1,6 @@
 <!--Affiche les infos sur l utilisateur-->
 
-<section id = 'info_user'>
+<section class = 'info_user'>
 <?php 
 if(isset($_SESSION['username'])){// ne s'affiche que si l'utilisateur est connecte
 	echo "
@@ -12,7 +12,7 @@ if(isset($_SESSION['username'])){// ne s'affiche que si l'utilisateur est connec
 }
 else{
     echo "
-        <h2 id = 'username'>Se connecter</2>
+        <h2 id = 'username'>Se connecter</h2>
         <ul id = 'options user'>
             <li><a href='\cherubim\site\login\login.php'>Se connecter</a>
             <li><a href='\cherubim\site\\register\\register.php'>Creer un compte</a>

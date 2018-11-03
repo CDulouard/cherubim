@@ -96,3 +96,20 @@ article
 {
     clear: both;
 }
+
+section.info_user
+{
+	background-color: #777474;
+	width: auto;
+	text-align: right;
+	width: 17%;
+	float: right;
+}
+section.info_user h2
+{
+	background-color: #3a3a3a;
+}
+section.info_user ul
+{
+
+}
