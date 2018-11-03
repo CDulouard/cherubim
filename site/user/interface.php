@@ -1,7 +1,7 @@
 <!--interface utilisateur-->
 <?php session_start();
 	if(!isset($_SESSION['username'])){
-		header('Location: /cherubim/site/accueil/login/login.php');
+		header('Location: ../login/login.php');
   		exit();
 //http://localhost/cherubim/site/accueil/user/interface.php
   		}
