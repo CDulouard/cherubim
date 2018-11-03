@@ -41,15 +41,12 @@
     	<header>
         	<h1>Projet CHERUBIM-Personnage:".$first_name."</h1>
         </header>
-        <nav>
-	    	<ul>
-     			<li><a href='../accueil/Projet_CHERUBIM.php'>Accueil</a></li>
-        		<li><a href='#'>Histoire</a></li>
-        		<li><a href='characters_list.php'>Personnages</a></li>
-        		<li><a href='#'>Contact</a></li>
-        	</ul>
+	    	";
+        
+        include('\wamp64\www\cherubim\site\modules\infoUser.php');//affiche les infos utilisateur
+        include('\wamp64\www\cherubim\site\modules\menu.php');//affiche le menu
 
-    	</nav>
+        echo "
         <main>
         	<article>
         		<section id = 'info_chars'>

@@ -1,3 +1,4 @@
+<!--Page principale du projet cherubim-->
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html>
@@ -12,41 +13,10 @@
         	<h1>Projet CHERUBIM</h1>
         </header>
         
-        <section id = 'info_user'>
-        <?php 
-        if(isset($_SESSION['username'])){// ne s'affiche que si l'utilisateur est connecte
-            echo "
-                    <h2 id = 'username'>".$_SESSION['username']." </h2>
-                    
-                    <ul id = 'options user'>
-                        <li><a href = '../login/disconnect.php'>Se deconnecter</a>
-                        <li><a href = '../user/interface.php'>Interface utilisateur</a>
-                    </ul>";
-        }
-        else{
-            echo "
-                    <h2 id = 'username'>Se connecter</2>
-                    <ul id = 'options user'>
-                        <li><a href='../login/login.php'>Se connecter</a>
-                        <li><a href='../register/register.php'>Creer un compte</a>
-                    <ul>";
-        }
+        <?php include('\wamp64\www\cherubim\site\modules\infoUser.php');//affiche les infos utilisateur?>
+        <?php include('\wamp64\www\cherubim\site\modules\menu.php');//affiche le menu?>
+        
 
-        ?>
-        </section>
-
-        <nav>
-	    	<ul>
-     			<li><a href="#">Accueil</a></li>
-        		<li><a href="../histoire/histoire.php">Histoire</a></li>
-        		<li><a href="/cherubim/site/characters/characters_list.php">Personnage</a></li>
-        		<li><a href="../test/test.php">Contact</a></li>
-        	</ul>
-        	<form>
-        	<input type="search" name="q" placeholder="Rechercher">
-        		<input type="submit" value="Lancer !">
-        	</form>
-    	</nav>
         <main>
             <article>
                 <h2>Synospis</h2>

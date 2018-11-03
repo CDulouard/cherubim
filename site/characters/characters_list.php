@@ -11,6 +11,8 @@
     <body>
     	<h1>Personnages :</h1>
 
+    	<?php include('\wamp64\www\cherubim\site\modules\infoUser.php');//affiche les infos utilisateur?>
+    	<?php include('\wamp64\www\cherubim\site\modules\menu.php');//affiche le menu?> 
     	
 
     	<section id = 'list_chars'>
