@@ -39,7 +39,7 @@
 
     <body>
     	<header>
-        	<h1>Projet CHERUBIM-Personnage:".$first_name."</h1>
+        	<h1>Projet CHERUBIM-Personnage : ".$first_name. " ".$last_name."</h1>
         </header>
 	    	";
         
