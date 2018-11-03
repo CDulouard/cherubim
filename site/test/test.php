@@ -8,7 +8,6 @@
     </head>
 
     <body>
-
     <script src = '../../js/test1.js'></script>
     </body>
 </html>
