@@ -92,6 +92,7 @@ a:active
 
 p
 {
+	margin: 20px;
 	font-size: 20px;
 	font-family: 'orbitron-medium', sans-serif;
 	text-shadow: 2px 2px 4px black;

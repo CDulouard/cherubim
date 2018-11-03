@@ -32,7 +32,7 @@ h1
 {
     color: grey;
     opacity: 1;
-    font-size: 100px;
+    font-size: 60px;
     font-family: 'orbitron-medium', sans-serif;
     text-shadow: 2px 2px 4px black;
 }
@@ -86,6 +86,7 @@ a:active
 
 p
 {
+	margin: 20px;
 	font-size: 20px;
 	font-family: 'orbitron-medium', sans-serif;
 	text-shadow: 2px 2px 4px black;
