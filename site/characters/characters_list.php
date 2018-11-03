@@ -11,11 +11,13 @@
     <body>
     	<h1>Personnages :</h1>
 
+    	
+
     	<section id = 'list_chars'>
     		<ul id = 'list_chars'>
 <?php
 
-include('\wamp64\www\cherubim\site\ConnectToDB.php');
+include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
 
 //on recupere tout les personnages dans la table charactere
 try{

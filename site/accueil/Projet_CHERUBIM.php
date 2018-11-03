@@ -12,35 +12,28 @@
         	<h1>Projet CHERUBIM</h1>
         </header>
         
+        <section id = 'info_user'>
         <?php 
-        
         if(isset($_SESSION['username'])){// ne s'affiche que si l'utilisateur est connecte
             echo "
-                <section id = 'info_user'>
-                    <h1 id = 'username'>
-                    ".$_SESSION['username']."
-                    </h1>
+                    <h2 id = 'username'>".$_SESSION['username']." </h2>
                     
                     <ul id = 'options user'>
                         <li><a href = '../login/disconnect.php'>Se deconnecter</a>
                         <li><a href = '../user/interface.php'>Interface utilisateur</a>
-                    </ul>
-
-                </section>";
+                    </ul>";
         }
         else{
             echo "
-                <section id = 'info_user'>
+                    <h2 id = 'username'>Se connecter</2>
                     <ul id = 'options user'>
                         <li><a href='../login/login.php'>Se connecter</a>
                         <li><a href='../register/register.php'>Creer un compte</a>
-                    <ul>
-
-                </section>";
+                    <ul>";
         }
 
         ?>
-        
+        </section>
 
         <nav>
 	    	<ul>

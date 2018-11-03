@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../../CSS/characters.css" />
 <?php   
 
-    include('\wamp64\www\cherubim\site\ConnectToDB.php');
+    include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
 
     $req = $bdd->prepare('SELECT * FROM characters WHERE id = ?'); //on prepare la requete pour le serveur
     

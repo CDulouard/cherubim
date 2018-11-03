@@ -3,7 +3,8 @@
 <?php 
 session_start();
 
-include('\wamp64\www\cherubim\site\ConnectToDB.php');
+include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+
 //on essaye de creer l utilisateur admin
 
 try{
