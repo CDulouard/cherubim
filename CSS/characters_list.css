@@ -1,0 +1,98 @@
+@font-face 
+{
+	font-family: 'Furore';
+    src: url('../font/Furore.otf');
+}
+
+@font-face 
+{
+    font-family: 'orbitron-black';
+    src: url('../font/orbitron-black.otf');
+}
+
+@font-face 
+{
+    font-family: 'orbitron-bold';
+    src: url('../font/orbitron-bold.otf');
+}
+
+@font-face 
+{
+    font-family: 'orbitron-light';
+    src: url('../font/orbitron-light.otf');
+}
+
+@font-face 
+{
+    font-family: 'orbitron-medium';
+    src: url('../font/orbitron-medium.otf');
+}
+
+body
+{
+	background: url("../img/background.jpg") center top no-repeat;
+	color: rgba(0,0,0, 0.8);
+}
+
+h1
+{
+    color: grey;
+    opacity: 1;
+    font-size: 40px;
+    font-family: 'Furore', sans-serif;
+}
+
+h2
+{
+	color: grey;
+	font-size: 24px;
+	font-family: 'orbitron-light', sans-serif;
+}
+
+h3
+{
+	font-size: 12px;
+	font-family: 'orbitron-light', sans-serif;
+	text-align: right;
+}
+
+h4
+{
+	font-size: 10px;
+	font-family: 'orbitron-bold', sans-serif;
+}
+
+li
+{
+	font-size: 14px;
+	color: rgb(125,125,125);
+	font-family: 'orbitron-black', sans-serif;
+}
+
+a
+{
+	font-size: 14px;
+	color: silver;
+	font-family: 'orbitron-black', sans-serif;
+}
+
+p
+{
+	font-size: 14px;
+	font-family: 'orbitron-medium', sans-serif;
+}
+
+article
+{
+	text-align: justify;
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.dessous
+{
+    clear: both;
+}

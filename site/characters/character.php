@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../CSS/characters.css" />
 <?php   
 
     include('\wamp64\www\cherubim\site\ConnectToDB.php');
@@ -69,7 +69,7 @@
         	</article>
         </main>
         <footer>
-        	<p>©Copyright 2077 BrumeHumanite. Tous droits reversés.</p>
+        	<h4>©Copyright 2077 BrumeHumanite. Tous droits reversés.</h4>
         </footer>
     </body>
 </html>

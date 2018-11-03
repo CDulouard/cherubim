@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../CSS/characters_list.css" />
         <title>Personnages</title>
     </head>
 
