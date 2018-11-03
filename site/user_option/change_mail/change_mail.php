@@ -3,7 +3,6 @@
 	if(!isset($_SESSION['username'])){
 		header('Location: /cherubim/site/accueil/login/login.php');
   		exit();
-//http://localhost/cherubim/site/accueil/user/interface.php
   		}
  ?>
 <!DOCTYPE html>
@@ -31,7 +30,6 @@
                         'username' => $_SESSION['username']) );
                         $ok = 1;
                         echo "<p id = 'info'>Mail modifie avec succes.</p>";
-                        $modif = 1;
                     }
                     else{
                         echo "<p id = 'info'>Mot de passe incorrect.</p>";
