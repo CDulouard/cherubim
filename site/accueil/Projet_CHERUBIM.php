@@ -45,9 +45,9 @@
         <nav>
 	    	<ul>
      			<li><a href="#">Accueil</a></li>
-        		<li><a href="#">Histoire</a></li>
+        		<li><a href="../histoire/histoire.php">Histoire</a></li>
         		<li><a href="/cherubim/site/characters/characters_list.php">Personnage</a></li>
-        		<li><a href="#">Contact</a></li>
+        		<li><a href="../test/test.php">Contact</a></li>
         	</ul>
         	<form>
         	<input type="search" name="q" placeholder="Rechercher">

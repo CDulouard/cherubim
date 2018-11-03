@@ -12,7 +12,7 @@
         </header>
         <nav>
 	    	<ul>
-     			<li><a href="#">Accueil</a></li>
+     			<li><a href="../accueil/projet_CHERUBIM.php">Accueil</a></li>
         	</ul>
         	<form>
         	<input type="search" name="q" placeholder="Rechercher">
