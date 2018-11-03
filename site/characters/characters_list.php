@@ -46,6 +46,5 @@ catch(Exception $e)
 ?>		
 			</ul>
 		</section>
-		<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
 	</body>
 </html>
