@@ -21,7 +21,7 @@
         		<p>Prologue
         		<br />En cours d'écriture, finit à 15 %.</p>
                 <p>Chapitre 1
-                <br />En cours d'écriture, finit.</p>
+                <br />Achevé.</p>
         	</article>
         </main>
         <footer>
