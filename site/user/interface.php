@@ -9,7 +9,6 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
         <title>Interface utilisateur</title>
     </head>
 
@@ -47,6 +46,7 @@
             <ul>
                 <li><a href="../admin_option/creat_character/creat_character.php">Creer personnage</a></li>
                 <li><a href="../admin_option/delete_character/delete_character.php">Supprimer personnage</a></li>
+                <li><a href="../admin_option/modify_character/modify_character_choice.php">Modifier personnage</a></li>
 
             </ul>
         </section>';
