@@ -46,6 +46,7 @@
             <h2>Gestion du site :</h2>
             <ul>
                 <li><a href="../admin_option/creat_character/creat_character.php">Creer personnage</a></li>
+                <li><a href="../admin_option/delete_character/delete_character.php">Supprimer personnage</a></li>
 
             </ul>
         </section>';
