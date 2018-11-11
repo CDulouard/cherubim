@@ -1,18 +1,7 @@
-<!doctype html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Nouveau personnage</title>
-    <link rel="stylesheet" href="../../css/textedit.css">
-    <script src="../../js/textedit.js"></script>
-</head>
-
-<body>
-    <form action="print.php" method="post" id="edit" enctype="multipart/form-data">
-       
-
-        <input type="button" value="G" style="font-weight: bold;" onclick="commande('bold');" />
+<section>
+<script src="/cherubim/js/textedit.js"></script>
+<input type="button" value="G" style="font-weight: bold;" onclick="commande('bold');" />
         <input type="button" value="I" style="font-style: italic;" onclick="commande('italic');" />
         <input type="button" value="S" style="text-decoration: underline;" onclick="commande('underline');" />
         <input type="button" value="Lien" onclick="commande('createLink');" />
@@ -80,16 +69,10 @@
     	<input type="button" value="undo" onclick="commande('undo');" />
     	<input type="button" value="redo" onclick="commande('redo');" />
     	
-    	<div id="editeur" contentEditable></div>
+    	<div id="editeur" contentEditable><?php if(isset($text)){echo $text ;}?></div>
 
-        <input type="button" onclick="resultat2();" value="Envoyer le formulaire !" ></code><br /> 
 
-        <textarea name='texte' id="resultat" style="display: none;"></textarea> 
-    
 
-    </form>
+        <textarea name='text' id="resultat" style="display: none;"></textarea> 
 
-    
-</body>
-
-</html>
+</section>

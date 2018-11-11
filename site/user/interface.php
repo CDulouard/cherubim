@@ -3,7 +3,6 @@
 	if(!isset($_SESSION['username'])){
 		header('Location: ../login/login.php');
   		exit();
-//http://localhost/cherubim/site/accueil/user/interface.php
   		}
  ?>
 <!DOCTYPE html>
@@ -31,7 +30,7 @@
 
     	</aside>
 
-    	<section id = 'gestion'>
+    	<section id = 'user_options'>
     		<h2>Options :</h2>
     		<ul>
     			<li><a href="../user_option/change_password/change_password.php">Changer mot de passe</a></li>
@@ -39,6 +38,25 @@
     			<li><a href="../user_option/delete_user/delete_user.php">Supprimer le compte</a></li>
     		</ul>
     	</section>
+
+        <?php 
+            if ($_SESSION['type'] == 'admin'){
+                echo '
+        <section id = \'admin_options\'>
+            <h2>Gestion du site :</h2>
+            <ul>
+                <li><a href="../admin_option/creat_character/creat_character.php">Creer personnage</a></li>
+
+            </ul>
+        </section>';
+            }
+
+
+
+
+        ?>
+
+
     	<a href="../accueil/Projet_CHERUBIM.php">accueil</a>
 	</body>
 </html>

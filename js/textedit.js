@@ -15,5 +15,4 @@ function commande(nom, argument) {
 function resultat2(){
 	document.getElementById("resultat").value = document.getElementById("editeur").innerHTML;
 	document.getElementById("edit").submit();
-	document.getElementById("edit").reset();
 }
