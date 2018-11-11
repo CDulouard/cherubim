@@ -1,9 +1,13 @@
 <!--page de modification de personnage-->
 <?php session_start();
-	if(!isset($_SESSION['username'])){
-		header('Location: ../../login/login.php');
-  		exit();
-  		}
+  if(!isset($_SESSION['username'])){
+    header('Location: ../../login/login.php');
+      exit();
+      }
+  if($_SESSION['type'] == 'user'){
+    header('Location: ../../user/interface.php');
+    exit();
+  }
  ?>
 
  <?php
