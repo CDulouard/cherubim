@@ -3,57 +3,93 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Manipulation des formulaires</title>
+    <title>Nouveau personnage</title>
+    <link rel="stylesheet" href="../../css/textedit.css">
+    <script src="../../js/textedit.js"></script>
 </head>
 
 <body>
-    <form>
-        <h1>Formulaire d'inscription</h1>
-        <p>
-            <label for="pseudo">Pseudo</label> :
-            <input type="text" name="pseudo" id="pseudo" required>
-            <span id="aidePseudo"></span>
-        </p>
-        <p>
-            <label for="mdp">Mot de passe</label> :
-            <input type="password" name="mdp" id="mdp" required>
-            <span id="aideMdp"></span>
-        </p>
-        <p>
-            <label for="courriel">Courriel</label> :
-            <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
-            <span id="aideCourriel"></span>
-        </p>
-        <p>
-            <input type="checkbox" name="confirmation" id="confirmation">
-            <label for="confirmation">M'envoyer un courriel de confirmation</label>
-        </p>
-        <p>
-            <input type="radio" name="abonnement" id="abonewspromo" value="abonewspromo">
-            <label for="abonewspromo">M'abonner à la newsletter et aux promotions</label>
-            <br>
-            <input type="radio" name="abonnement" id="abonews" value="abonews">
-            <label for="abonews">M'abonner uniquement à la newsletter</label>
-            <br>
-            <input type="radio" name="abonnement" id="aborien" value="aborien" checked>
-            <label for="aborien">Ne pas m'abonner</label>
-            <br>
-        </p>
-        <p>
-            <label for="nationalite">Nationalité :</label>
-            <select name="nationalite" id="nationalite">
-                <option value="FR" selected>Française</option>
-                <option value="BE">Belge</option>
-                <option value="SUI">Suisse</option>
-                <option value="XX">Autre</option>
-            </select>
-        </p>
+    <form action="print.php" method="post" id="edit" enctype="multipart/form-data">
+       
 
-        <input type="submit" value="Envoyer">
-        <input type="reset" value="Annuler">
+        <input type="button" value="G" style="font-weight: bold;" onclick="commande('bold');" />
+        <input type="button" value="I" style="font-style: italic;" onclick="commande('italic');" />
+        <input type="button" value="S" style="text-decoration: underline;" onclick="commande('underline');" />
+        <input type="button" value="Lien" onclick="commande('createLink');" />
+        
+        <select onchange="commande('formatBlock', this.value); this.selectedIndex = 0;">
+        	<option value="">Titre</option>
+        	<option value="h1">h1</option>
+        	<option value="h2">h2</option>
+        	<option value="h3">h3</option>
+        	<option value="h4">h4</option>
+        	<option value="h5">h5</option>
+        	<option value="h6">h6</option>
+        </select> 
+
+        <select onchange="commande(this.value); this.selectedIndex = 0;">
+        	<option value="">Justification</option> <option value="justifyleft">justify left</option>
+        	<option value="justifyright">justify right</option> <option value="justifycenter">justify center</option>
+        	<option value="justifyfull">justify full</option>
+       	</select> 
+
+    	<select onchange="commande('foreColor', this.value); this.selectedIndex = 0;">
+    		<option value="">Couleur</option>
+    		<option value="black" style="color: black;">Noir</option>
+    		<option value="aqua" style="color: aqua;">Cyan</option>
+    		<option value="blue" style="color: blue;">Bleu</option>
+    		<option value="fuchsia" style="color: fuchsia;">Fuchsia</option>
+    		<option value="gray" style="color: gray;">Gris</option>
+    		<option value="Green" style="color: green;">Vert</option>
+    		<option value="lime" style="color: lime;">Lime</option>
+    		<option value="maroon" style="color: maroon;">Maron</option>
+    		<option value="navy" style="color: navy;">Bleu fonce</option>
+    		<option value="olive" style="color: olive;">Olive</option>
+    		<option value="Purple" style="color: purple;">Violet</option>
+    		<option value="red" style="color: red;">Rouge</option>
+    		<option value="silver" style="color: silver;">Argent</option>
+    		<option value="teal" style="color: teal;">Turquoise</option>
+    		<option value="white" style="color: white;">Blanc</option>
+    		<option value="yellow" style="color: yellow;">Jaune</option>
+    		<option value="snow" style="color: snow;">Neige</option>
+    		<option value="antiquewhite" style="color: antiquewhite;">Blanc antique</option>
+    		<option value="darkgray" style="color: darkgray;">Gris clair</option>
+    		<option value="darkgoldenrod" style="color: darkgoldenrod;">Dore fonce</option>
+    		<option value="goldenrod" style="color: goldenrod;">Dore</option>
+    		<option value="orange" style="color: orange;">orange</option>
+    		<option value="steelblue" style="color: steelblue;">Bleu acier</option>
+    		<option value="dimgray" style="color: dimgray;">Gris pale</option>
+    		<option value="lightslategray" style="color: lightslategray;">Gris ardoise clair</option>
+    		<option value="gold" style="color: gold;">Or</option>
+    		<option value="midnightblue" style="color: midnightblue;">Bleur nuit</option>
+    	</select>
+
+    	<select onchange="commande('fontSize', this.value); this.selectedIndex = 0;">
+    		<option value="">Taille</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="6">6</option>
+    		<option value="7">7</option>
+
+    		
+    	</select>
+
+    	<input type="button" value="undo" onclick="commande('undo');" />
+    	<input type="button" value="redo" onclick="commande('redo');" />
+    	
+    	<div id="editeur" contentEditable></div>
+
+        <input type="button" onclick="resultat2();" value="Envoyer le formulaire !" ></code><br /> 
+
+        <textarea name='texte' id="resultat" style="display: none;"></textarea> 
+    
+
     </form>
 
-    <script src="../../js/form.js"></script>
+    
 </body>
 
 </html>
