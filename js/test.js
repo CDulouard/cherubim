@@ -19,14 +19,9 @@ houston.age = 1;
 houston.couleur = 'blanc et noir';
 console.log(houston.decrire());
 loulou = Object.create(chat);
-loulou.init('loulou', 1, 'noir et blanc')
-console.log(loulou.decrire())
+loulou.init('loulou', 1, 'noir et blanc');
+console.log(loulou.decrire());
 
 
-document.write('<form name = "form" action="" method="post" ><textarea style="resize: none;"  id = "texte" name="texte" rows = "30" cols = "150"></textarea> </form>');
+//document.write('<form name = "form" action="" method="post" ><textarea style="resize: none;"  id = "texte" name="texte" rows = "30" cols = "150"></textarea> </form>');
 
-if(keypress){
-	console.log(document.getElementById("texte").value);
-}
-
-	
