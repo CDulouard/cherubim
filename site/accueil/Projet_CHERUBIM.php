@@ -25,7 +25,7 @@
                 <br />
                 <br />Toutefois, la militarisation extrême des autres puissances força l'AON à développer des technologies de combats défensives et de riposte.
                 <br />
-                <br />C'est avec l'arrivé d'une machine oubliée venant d'ailleurs qui va révéler les mystères de sa fondation, ainsi que ceux des horreurs engendrés par la guerre et de ceux qui en sont responsables.</p>
+                <br />C'est avec l'arrivé d'une machine oubliée venant d'ailleurs qui va révéler les mystères de sa fondation, ainsi que ceux des horreurs engendrées par la guerre et de ceux qui en sont responsables.</p>
             </article>
             <article>
                 <h2 class="dessous">CHERUBIM</h2>
