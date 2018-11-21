@@ -31,6 +31,7 @@
 body
 {
 	background: url("../img/background.jpg") center top no-repeat;
+	background-attachment: scroll;
 	color: rgba(0,0,0, 0.8);
 }
 

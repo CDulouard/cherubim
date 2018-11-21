@@ -1,5 +1,5 @@
 host=localhost
 dbname=cherubim
 charset=utf8
-user=admin
-password=admin
+user=root
+password=

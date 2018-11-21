@@ -22,6 +22,8 @@
         		<br />En cours d'écriture, finit à 15 %.</p>
                 <p>Chapitre 1
                 <br />Achevé.</p>
+                <p>Chapitre 2
+                <br />En cours d'écriture, finit à 15 %.</p>
         	</article>
         </main>
         <footer>
