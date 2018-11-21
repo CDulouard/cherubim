@@ -43,8 +43,8 @@
         </header>
 	    	";
         
-        include('\wamp64\www\cherubim\site\modules\infoUser.php');//affiche les infos utilisateur
-        include('\wamp64\www\cherubim\site\modules\menu.php');//affiche le menu
+        include('../modules/infoUser.php');//affiche les infos utilisateur
+        include('../modules/menu.php');//affiche le menu
 
         echo "
         <main>

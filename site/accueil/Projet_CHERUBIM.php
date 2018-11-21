@@ -13,8 +13,8 @@
         	<h1>Projet CHERUBIM</h1>
         </header>
         
-        <?php include('\wamp64\www\cherubim\site\modules\infoUser.php');//affiche les infos utilisateur?>
-        <?php include('\wamp64\www\cherubim\site\modules\menu.php');//affiche le menu?>
+        <?php include('../modules/infoUser.php');//affiche les infos utilisateur?>
+        <?php include('../modules/menu.php');//affiche le menu?>
         
 
         <main>
