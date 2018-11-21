@@ -1,6 +1,6 @@
 <!--Menu du site-->
 <nav>
-	<ul>
+	<ul id="menu" class="menu">
      	<li><a href="\cherubim\site\accueil\Projet_CHERUBIM.php">Accueil</a></li>
         <li><a href="\cherubim\site\histoire\histoire.php">Histoire</a></li>
         <li><a href="\cherubim\site\characters\characters_list.php">Personnage</a></li>

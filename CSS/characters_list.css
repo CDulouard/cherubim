@@ -110,13 +110,12 @@ article
     clear: both;
 }
 
-section.info_user
+#info
 {
 	background-color: #777474;
 	width: auto;
-	text-align: right;
-	width: 17%;
-	float: right;
+	text-align: center;
+	float: top;
 }
 section.info_user h2
 {
@@ -125,4 +124,20 @@ section.info_user h2
 section.info_user ul
 {
 
+}
+
+#menu
+{
+	text-align: left;
+}
+
+#options_user
+{
+	text-align: right;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
 }

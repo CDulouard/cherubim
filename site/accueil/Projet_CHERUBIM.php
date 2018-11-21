@@ -13,8 +13,13 @@
         	<h1>Projet CHERUBIM</h1>
         </header>
         
-        <?php include('../modules/infoUser.php');//affiche les infos utilisateur?>
-        <?php include('../modules/menu.php');//affiche le menu?>
+
+
+        <section id="info">
+            <?php include('../modules/infoUser.php');//affiche les infos utilisateur?>
+            <?php include('../modules/menu.php');//affiche le menu?>
+        </section>
+        
         
 
         <main>
