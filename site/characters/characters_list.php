@@ -18,7 +18,8 @@
     		<ul id = 'list_chars'>
 <?php
 
-include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+include('../modules/ConnectToDB.php');
+$bdd = connectToDB('../setting');
 
 //on recupere tout les personnages dans la table charactere
 try{

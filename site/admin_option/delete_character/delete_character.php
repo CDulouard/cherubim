@@ -21,7 +21,8 @@
     <body>
 
     	<?php
-    	include('../../../site/modules/ConnectToDB.php');
+    	include('../../modules/ConnectToDB.php');
+        $bdd = connectToDB('../../setting');
     	
     	if(isset($_POST['choice'])){
     		$req = $bdd->prepare('SELECT * FROM users WHERE username = ?');

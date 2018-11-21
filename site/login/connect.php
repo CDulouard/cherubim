@@ -4,7 +4,8 @@
 session_start();
 //on essaye de recuperer les parametres pour acceder a la base de donnee 
 
-include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+include('../modules/ConnectToDB.php');
+$bdd = connectToDB('../setting');
 
 
 //on essaye de creer l utilisateur admin

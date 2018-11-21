@@ -24,7 +24,8 @@
     if (isset($_POST['first_name'])) {
         if ($_POST['first_name'] != '') {
             
-            include('../../../site/modules/ConnectToDB.php');
+            include('../../modules/ConnectToDB.php');
+            $bdd = connectToDB('../../setting');
 
             $req = $bdd->prepare('INSERT INTO characters(first_name, last_name, birth, article) VALUES(:first_name, :last_name, :birth, :article)'); //on prepare la requete de modification de mail
             

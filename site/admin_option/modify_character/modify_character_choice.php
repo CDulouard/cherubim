@@ -14,7 +14,8 @@
 
     <body>
         <?php
-        include('../../../site/modules/ConnectToDB.php');
+        include('../../modules/ConnectToDB.php');
+        $bdd = connectToDB('../../setting');
         $data = $bdd->query('SELECT * FROM characters');
         echo '
           <form action="modify_character.php" method="post">

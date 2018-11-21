@@ -18,7 +18,8 @@
         <?php
         
         if(isset($_POST['password'])){
-            include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+            include('../../modules/ConnectToDB.php');
+            $bdd = connectToDB('../../setting');
             $req = $bdd->prepare('SELECT password FROM users WHERE username =? ');//on recupere le mot de passe hashe de l utilisateur
             $req->execute(array($_SESSION['username']));
             $data = $req->fetch();

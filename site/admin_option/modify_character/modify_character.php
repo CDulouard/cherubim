@@ -27,7 +27,8 @@
     <body>
     	
 <?php
-    include('../../../site/modules/ConnectToDB.php');
+    include('../../modules/ConnectToDB.php');
+    $bdd = connectToDB('../../setting');
     if (isset($_POST['first_name'])) {
         if ($_POST['first_name'] != '') {
             

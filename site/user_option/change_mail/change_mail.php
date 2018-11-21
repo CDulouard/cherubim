@@ -19,7 +19,8 @@
         if(isset($_POST['mail'])){
             if(preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['mail'])){
                 if($_POST['mail'] == $_POST['mail_confirm']){
-                    include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+                    include('../../modules/ConnectToDB.php');
+                    $bdd = connectToDB('../../setting');
                     $req = $bdd->prepare('SELECT password FROM users WHERE username =? ');//on recupere le mot de passe hashe de l utilisateur
                     $req->execute(array($_SESSION['username']));
                     $data = $req->fetch();

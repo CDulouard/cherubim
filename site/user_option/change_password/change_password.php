@@ -20,7 +20,8 @@
         if(isset($_POST['password'])){
             if(preg_match("#^.{4,255}$#", $_POST['password_new'])){
                 if($_POST['password_new'] == $_POST['password_confirm']){
-                    include('\wamp64\www\cherubim\site\modules\ConnectToDB.php');
+                    include('../../modules/ConnectToDB.php');
+                    $bdd = connectToDB('../../setting');;
                     $req = $bdd->prepare('SELECT password FROM users WHERE username =? ');//on recupere le mot de passe hashe de l utilisateur
                     $req->execute(array($_SESSION['username']));
                     $data = $req->fetch();
