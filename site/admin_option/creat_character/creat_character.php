@@ -36,6 +36,7 @@
                 'article' => $_POST['text']
 
             ) );
+
             
             $ok = 1;
             echo "Personnage cree avec succes!";

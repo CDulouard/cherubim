@@ -44,7 +44,6 @@
         </header>
 	    	";
         
-        include('../modules/infoUser.php');//affiche les infos utilisateur
         include('../modules/menu.php');//affiche le menu
 
         echo "

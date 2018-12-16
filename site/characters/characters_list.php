@@ -9,13 +9,13 @@
     </head>
 
     <body>
-    	<h1>Personnages :</h1>
+    	
 
-    	<?php include('../modules/infoUser.php');//affiche les infos utilisateur?>
         <?php include('../modules/menu.php');//affiche le menu?>
-
+        <h2>Personnages :</h2>
     	<section id = 'list_chars'>
     		<ul id = 'list_chars'>
+
 <?php
 
 include('../modules/ConnectToDB.php');

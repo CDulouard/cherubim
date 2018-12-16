@@ -120,15 +120,22 @@ article
 section.info_user h2
 {
 	background-color: #3a3a3a;
+
 }
 section.info_user ul
 {
 
 }
 
-#menu
+.menu li
 {
 	text-align: left;
+	display: inline;
+	padding: 20px;
+	background-color: #3a3a3a;
+	width: auto;
+	text-align: center;
+	float: top;
 }
 
 #options_user
@@ -138,6 +145,6 @@ section.info_user ul
 
 li {
     list-style-type: none;
-    display: inline;
-    padding: 20px;
+    
+    
 }
